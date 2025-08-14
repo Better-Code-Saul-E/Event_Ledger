@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(7px);
-  gap: 100px;
+  gap: 50px;
   background-color: rgba(51, 61, 80, 0.7);
 }
 

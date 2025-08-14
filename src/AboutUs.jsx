@@ -5,7 +5,7 @@ const AboutUs = () => {
         <div className="aboutus_container">
             <p>
                 Welcome to Event Ledger, your essential partner in simplifying 
-                evetn finances. Our mission it to make budgeting effortless for 
+                event finances. Our mission it to make budgeting effortless for 
                 the professionals who create experiences.
             </p>
             <p> Event Ledger is specifically built for corporate event coordinators. 
