@@ -1,0 +1,14 @@
+footer {
+    padding: 2% 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0D47A0;
+    color: white;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}

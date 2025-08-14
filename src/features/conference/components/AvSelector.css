@@ -1,0 +1,17 @@
+/* Generic styles for all selector sections */
+.selection-container {
+    margin-bottom: 2rem;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.section-total {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}

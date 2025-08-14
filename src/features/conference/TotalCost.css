@@ -1,0 +1,37 @@
+.pricing-app {
+  max-width: 800px;
+  margin: 2rem auto;
+  /* Center the card on the page */
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  overflow: hidden;
+}
+
+.pricing-app .header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.pricing-app .header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.pricing-app .price-body {
+  padding: 2rem;
+  text-align: center;
+}
+
+.pricing-app .price {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.render_items {
+  text-align: left;
+}
