@@ -1,0 +1,72 @@
+:root {
+  --header-height: 70px;
+  --primary-color: #0d47a1;       /* Deep Blue */
+  --primary-color-dark: #021024;  /* Darker Blue */
+  --brand-red: #BF0A30;           /* Strong red (flag red) */
+  --brand-red-dark: #8C061F;  
+  --accent-color: #ffab40;        /* Orange */
+  --accent-color-dark: #ff9100;   /* Darker Orange */
+  --background-color: #f8f9fa;    /* Light Grey Background */
+  --card-background: #ffffff;     /* White */
+  --text-color: #212529;          /* Dark Grey Text */
+  --subtle-text-color: #454545;   /* Light Grey Text */
+  --border-color: #dee2e6;        /* Light Border */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; 
+}
+
+#root {
+  min-height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main {
+  flex: 1; 
+  width: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+}
+ 
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}

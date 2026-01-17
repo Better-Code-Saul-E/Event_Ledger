@@ -1,0 +1,65 @@
+.section-why {
+    background-color: var(--card-background);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.section-why h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color-dark);
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--primary-color-dark);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px var(--shadow-color);
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--brand-red); 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.15);
+    color: var(--brand-red-dark); 
+}
+
+.feature-card h3 {
+    color: var(--primary-color-dark);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.feature-card p {
+    color: var(--subtle-text-color);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}

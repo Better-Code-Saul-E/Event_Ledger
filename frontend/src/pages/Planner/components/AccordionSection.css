@@ -1,0 +1,71 @@
+.accordion-container {
+    background: var(--card-background);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.accordion-container:hover {
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--card-background);
+    color: var(--primary-color-dark);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: var(--background-color);
+}
+
+.accordion-header.active {
+    background-color: var(--primary-color-dark);
+    color: var(--card-background);
+    border-bottom: 1px solid var(--primary-color-dark);
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: inherit;
+}
+
+.arrow {
+    font-size: 0.8rem;
+    transition: transform 0.9s ease;
+    color: inherit;
+}
+
+.accordion-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 1.5rem;
+    background-color: #fff;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

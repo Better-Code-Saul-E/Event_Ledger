@@ -1,3 +1,28 @@
+# ========================
+# OS & Editors (General)
+# ========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ========================
+# Frontend (React / Vite)
+# ========================
+# Dependencies
+node_modules/
+
+# Build Outputs
+dist/
+dist-ssr/
+build/
+
 # Logs
 logs
 *.log
@@ -7,18 +32,63 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Testing
+coverage/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# ========================
+# Backend (Python / Django)
+# ========================
+# Byte-compiled / Optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments 
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Django specific
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Media: User-uploaded files (Keep these local only)
+media/
+
+# Static: Collected static files for production (Generated)
+staticfiles/
+
+# ========================
+# Environment & Secrets (SECURITY)
+# ========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local

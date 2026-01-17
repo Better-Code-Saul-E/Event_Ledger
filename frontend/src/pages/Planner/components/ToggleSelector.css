@@ -1,0 +1,114 @@
+.generic-toggle-wrapper {
+    background: var(--card-background);
+    width: 100%;
+}
+
+.global-input-container {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.global-input-container label {
+    font-weight: 600;
+    color: var(--primary-color-dark);
+}
+
+.global-input {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100px;
+    color: var(--primary-color-dark);
+    font-weight: bold;
+}
+
+.toggle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* === Toggle Card Stules ===*/
+
+.toggle-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.toggle-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-color: var(--primary-color-dark);
+}
+
+.toggle-card.active-card {
+    border-color: var(--primary-color-dark);
+    background-color: var(--background-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%; 
+    pointer-events: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--brand-red);
+    cursor: pointer;
+    margin: 0;
+}
+
+.toggle-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+    text-align: left;
+}
+
+.item-name {
+    font-weight: 600;
+    color: var(--primary-color-dark);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.item-cost {
+    font-size: 0.9rem;
+    color: var(--subtle-text-color);
+    margin-top: 2px;
+}
+
+.section-total {
+    text-align: right;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--primary-color-dark);
+}
