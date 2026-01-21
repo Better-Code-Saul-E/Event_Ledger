@@ -24,19 +24,25 @@ const ToggleCard = ({ item, onToggle }) => {
     );
 };
 
-export const ToggleSelector = ({ itemsSelector, quantitySelector, toggleAction, quantityAction, inputLabel = "Quantity" }) => {
+export const ToggleSelector = ({ itemsSelector, quantitySelector, statusSelector, fetchAction, toggleAction, quantityAction, inputLabel = "Quantity" }) => {
     const dispatch = useDispatch();
 
     const items = useSelector(itemsSelector);
     const globalQuantity = useSelector(quantitySelector);
 
+    const status = useSelector(statusSelector);
+
     const [localQuantity, setLocalQuantity] = useState(globalQuantity);
 
     useEffect(() => {
-        dispatch(quantityAction(localQuantity));
+        if(status === 'idle'){
+            dispatch(fetchAction());
+        }
     }, [localQuantity, dispatch, quantityAction]);
 
-    const selectedTotal = items
+    const safeItems = items || [];
+
+    const selectedTotal = safeItems
         .filter(item => item.selected)
         .reduce((acc, item) => acc + item.cost, 0);
 

@@ -18,6 +18,7 @@ const venueSlice = createSlice({
     items: [],
     // possible values: 'idle', 'loading', 'succeeded', 'failed'
     status: "idle",
+    error: null,
   },
   reducers: {
     incrementVenueQuantity: (state, action) => {

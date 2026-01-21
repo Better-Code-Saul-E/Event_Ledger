@@ -4,7 +4,7 @@ import { getImage } from '../../../utils/imageMapper';
 import './ImageSelector.css';
 
 export const ImageCard = ({ item, onIncrement, onDecrement }) => {
-    const imgSrc = item.img || getImage(item.image_path);
+    const imgSrc = getImage(item.img);
 
     return (
         <div className="item-card">
@@ -17,7 +17,7 @@ export const ImageCard = ({ item, onIncrement, onDecrement }) => {
                 <button onClick={onIncrement} className="control-btn">+</button>
             </div>
         </div>
-    );
+    ); 
 };
 
 export const ImageSelector = ({ itemsSelector, statusSelector, fetchAction, incrementAction, decrementAction, label = "Total Cost" }) => {

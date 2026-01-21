@@ -10,17 +10,17 @@ import rooftop from '../assets/images/RooftopGarden.jpg';
 import imageError from '../assets/images/ImageError.png';
 
 const imageMap = {
-    "/src/assets/ConferenceRoom.jpg": conferenceRoom,
-    "/src/assets/Auditorium.jpg": auditorium,
-    "/src/assets/PresentationRoom.jpg": presentationRoom,
-    "/src/assets/LargeMeetingRoom.jpg": largeMeetingRoom,
-    "/src/assets/SmallMeetingRoom.jpg": smallMeetingRoom,
-    "/src/assets/ExecutiveBoardRoom.jpg": boardRoom,
-    "/src/assets/TrainingLab.jpg": trainingLab,
-    "/src/assets/Workshop.jpg": workshop,
-    "/src/assets/RooftopGarden.jpg": rooftop
+    "ConferenceRoom.jpg": conferenceRoom,
+    "Auditorium.jpg": auditorium,
+    "PresentationRoom.jpg": presentationRoom,
+    "LargeMeetingRoom.jpg": largeMeetingRoom,
+    "SmallMeetingRoom.jpg": smallMeetingRoom,
+    "ExecutiveBoardRoom.jpg": boardRoom,
+    "TrainingLab.jpg": trainingLab,
+    "Workshop.jpg": workshop,
+    "RooftopGarden.jpg": rooftop,
 };
 
-export const getImage = (dbPath) => {
-    return imageMap[dbPath] || imageError;
+export const getImage = (imageName) => {
+    return imageMap[imageName] || imageError;
 };

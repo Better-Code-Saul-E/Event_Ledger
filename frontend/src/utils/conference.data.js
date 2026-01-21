@@ -1,23 +1,13 @@
-import conferenceImg from '../assets/images/ConferenceRoom.jpg';
-import auditoriumImg from '../assets/images/Auditorium.jpg';
-import presentationImg from '../assets/images/PresentationRoom.jpg';
-import largeMeetingImg from '../assets/images/LargeMeetingRoom.jpg';
-import smallMeetingImg from '../assets/images/SmallMeetingRoom.jpg';
-import boardRoomImg from '../assets/images/ExecutiveBoardRoom.jpg';
-import trainingLabImg from '../assets/images/TrainingLab.jpg';
-import workshopImg from '../assets/images/Workshop.jpg';
-import rooftopImg from '../assets/images/RooftopGarden.jpg';
-
 export const VENUE_FALLBACK_DATA = [
-    { id: 'venue-4', name: "Small Meeting Room (Capacity:5)", cost: 150, quantity: 0, img: smallMeetingImg },
-    { id: 'venue-3', name: "Large Meeting Room (Capacity:25)", cost: 300, quantity: 0, img: largeMeetingImg },
-    { id: 'venue-0', name: "Conference Room (Capacity:15)", cost: 450, quantity: 0, img: conferenceImg },
-    { id: 'venue-6', name: "Training Lab (Capacity:20)", cost: 600, quantity: 0, img: trainingLabImg },
-    { id: 'venue-5', name: "Executive Boardroom (Capacity:12)", cost: 750, quantity: 0, img: boardRoomImg },
-    { id: 'venue-2', name: "Presentation Room (Capacity:50)", cost: 800, quantity: 0, img: presentationImg },
-    { id: 'venue-8', name: "Creative Workshop (Capacity:30)", cost: 900, quantity: 0, img: workshopImg },
-    { id: 'venue-7', name: "Rooftop Garden (Capacity:80)", cost: 1500, quantity: 0, img: rooftopImg },
-    { id: 'venue-1', name: "Auditorium Hall (Capacity:200)", cost: 2500, quantity: 0, img: auditoriumImg },
+    { id: 'venue-4', name: "Small Meeting Room (Capacity:5)", cost: 150, quantity: 0, img: "SmallMeetingRoom.jpg" },
+    { id: 'venue-3', name: "Large Meeting Room (Capacity:25)", cost: 300, quantity: 0, img: "LargeMeetingRoom.jpg" },
+    { id: 'venue-0', name: "Conference Room (Capacity:15)", cost: 450, quantity: 0, img: "ConferenceRoom.jpg" },
+    { id: 'venue-6', name: "Training Lab (Capacity:20)", cost: 600, quantity: 0, img: "TrainingLab.jpg" },
+    { id: 'venue-5', name: "Executive Boardroom (Capacity:12)", cost: 750, quantity: 0, img: "ExecutiveBoardRoom.jpg" },
+    { id: 'venue-2', name: "Presentation Room (Capacity:50)", cost: 800, quantity: 0, img: "PresentationRoom.jpg" },
+    { id: 'venue-8', name: "Creative Workshop (Capacity:30)", cost: 900, quantity: 0, img: "Workshop.jpg" },
+    { id: 'venue-7', name: "Rooftop Garden (Capacity:80)", cost: 1500, quantity: 0, img: "RooftopGarden.jpg" },
+    { id: 'venue-1', name: "Auditorium Hall (Capacity:200)", cost: 2500, quantity: 0, img: "Auditorium.jpg" },
 ];
 
 export const AV_FALLBACK_DATA = [
