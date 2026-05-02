@@ -56,7 +56,14 @@ export const ToggleSelector = ({ itemsSelector, quantitySelector, statusSelector
                     type="number"
                     id="global-qty"
                     value={localQuantity}
-                    onChange={(e) => setLocalQuantity(parseInt(e.target.value, 10) || 0)}
+                    onChange={(e) => {
+                        const newVal = parseInt(e.target.value, 10) || 0;
+                        setLocalQuantity(newVal);
+
+                        if(quantityAction){
+                            dispatch(quantityAction(newVal));
+                        }
+                    }}
                     min="1"
                     className="global-input"
                 />
