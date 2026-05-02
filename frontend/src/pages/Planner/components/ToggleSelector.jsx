@@ -38,7 +38,7 @@ export const ToggleSelector = ({ itemsSelector, quantitySelector, statusSelector
         if(status === 'idle'){
             dispatch(fetchAction());
         }
-    }, [localQuantity, dispatch, quantityAction]);
+    }, [status, dispatch, quantityAction]);
 
     const safeItems = items || [];
 
@@ -63,7 +63,7 @@ export const ToggleSelector = ({ itemsSelector, quantitySelector, statusSelector
             </div>
 
             <div className="toggle-grid">
-                {items.map((item) => (
+                {safeItems.map((item) => (
                     <ToggleCard
                         key={item.id}
                         item={item}
