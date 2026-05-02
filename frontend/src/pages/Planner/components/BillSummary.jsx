@@ -91,7 +91,7 @@ export const BillSummary = () => {
                 )}
             </div>
 
-            <BillFooter total={grandTotal.toLocaleString()} />
+            <BillFooter total={grandTotal} />
         </div>
     );
 };
