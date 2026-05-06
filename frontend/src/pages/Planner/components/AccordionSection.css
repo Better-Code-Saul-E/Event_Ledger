@@ -54,7 +54,7 @@
 
 .accordion-content {
     padding: 1.5rem;
-    background-color: #fff;
+    background-color: var(--card-background);
     animation: slideDown 0.3s ease-out;
 }
 
